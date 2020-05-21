@@ -8,6 +8,8 @@ namespace FruitMe
         static void Main(string[] args)
         {
             DoWork();
+            Console.Write("Press the [ANY] key to continue...");
+            Console.ReadKey();
         }
 
         public static void DoWork()
@@ -16,7 +18,7 @@ namespace FruitMe
             var fruit = Fruit.AllFruits.ElementAt(fruitIndex);
             Console.WriteLine($"Hello :)");
             Console.WriteLine($"Here, have {fruit.Key}.");
-            Console.Write(fruit.Value);
+            Console.WriteLine(fruit.Value);
         }
     }
 }
